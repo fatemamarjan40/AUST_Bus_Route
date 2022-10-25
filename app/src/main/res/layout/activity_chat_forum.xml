@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatForum">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvmessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blue_grey_300"
+        android:padding="5dp"
+        >
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Message"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="#c90dbc" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:layout_x="294dp"
+                android:layout_y="0dp"
+
+                android:background="@drawable/ic_action_send"
+
+                android:onClick="onClick"
+                tools:ignore="ContentDescription" />
+        </AbsoluteLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

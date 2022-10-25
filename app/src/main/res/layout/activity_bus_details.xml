@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bc2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusShedule.BusDetails">
+    <!--  route  -->
+
+
+    <!-- BUS name -->
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-3dp"
+        android:background="#99141414"
+        android:layout_y="107dp">
+
+        <TextView
+            android:id="@+id/rt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="8dp"
+            android:layout_y="10dp"
+            android:text="ROUTE NO"
+
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="60dp"
+            android:text="1"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="110dp"
+            android:text="2"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="160dp"
+            android:text="3"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="210dp"
+            android:text="4"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="260dp"
+            android:text="5"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="30dp"
+            android:layout_y="310dp"
+            android:text="6"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <!--  route  -->
+        <TextView
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="150dp"
+            android:layout_y="10dp"
+            android:text="BUS"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="60dp"
+            android:text="Podma"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="110dp"
+            android:text="Meghna"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="160dp"
+            android:text="Jamuna"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="210dp"
+            android:text="Surma"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="260dp"
+            android:text="Karnaphuli"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="310dp"
+            android:text="Kopotakkho"
+            android:textColor="#BDAFAF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <!-- BUS name -->
+
+        <!-- details button -->
+        <Button
+            android:id="@+id/rt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="50dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+
+        <Button
+            android:id="@+id/rt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="100dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+
+        <Button
+            android:id="@+id/rt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="150dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+
+        <Button
+            android:id="@+id/rt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="200dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+
+        <Button
+            android:id="@+id/rt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="250dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+
+        <Button
+            android:id="@+id/rt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="264dp"
+            android:layout_y="300dp"
+            android:background="@color/blue_400"
+            android:onClick="onClick"
+            android:text="Details"
+            android:textColor="@color/blue_grey_900" />
+    </AbsoluteLayout>
+</AbsoluteLayout>

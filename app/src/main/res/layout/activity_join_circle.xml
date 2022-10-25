@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_500"
+    tools:context=".JoinCircleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="55dp"
+            android:gravity="center"
+            android:text="Enter circle code to join"
+            android:textSize="20sp"
+
+            />
+
+        <com.goodiebag.pinview.Pinview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:inputType="number"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:pinWidth="35dp"
+        android:id="@+id/pinview"
+
+
+        ></com.goodiebag.pinview.Pinview>
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:background="@color/blue_grey_900"
+        android:onClick="submitButtonClick"
+        android:layout_marginTop="50dp"
+        android:text="SUBMIT"
+        android:textSize="22dp"
+        android:textColor="@color/blue_400"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

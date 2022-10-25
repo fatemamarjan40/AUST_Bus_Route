@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue_grey_900"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+
+        <ImageView
+            android:layout_width="315dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom ="68dp"
+            android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:hint="Enter Email"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/blue_grey_300"
+        android:textColorHint="@color/blue_grey_500" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></View>
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:background="@color/blue_400"
+        android:onClick="gotoPasswordActivity"
+        android:text="Next"
+        android:textSize="26dp"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_grey_900"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

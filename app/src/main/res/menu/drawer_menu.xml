@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1"
+        >
+    <!--    <item
+            android:id="@+id/nav_joinCircle"
+            android:title="Join Circle" />-->
+        <item
+            android:id="@+id/nav_myCircle"
+            android:title="Members" />
+
+       <!-- <item
+            android:id="@+id/nav_joinedCircle"
+            android:title="Joined Circle" />
+
+        <item
+            android:id="@+id/nav_inviteMembers"
+            android:title="Invite Members" />-->
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2"
+        >
+        <item
+            android:id="@+id/nav_signOut"
+            android:title="Sign Out" />
+    </group>
+
+
+</menu>

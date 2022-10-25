@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue_grey_900"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nameActivity">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="175dp"
+        android:layout_height="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/icon" />
+        <!--android:onClick="selectImage"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="196dp"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></View>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circleImage"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:hint="Enter your name"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/blue_grey_300"
+            android:textColorHint="@color/blue_grey_500" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110dp"></View>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:background="@color/blue_400"
+            android:onClick="registration"
+            android:text="Register"
+            android:textSize="26dp"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_grey_900"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>
